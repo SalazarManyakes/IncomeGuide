@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutMineViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="RaO-v8-aWo">
+                    <rect key="frame" x="30" y="70" width="80" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Lqb-KU-oRJ"/>
+                        <constraint firstAttribute="height" constant="80" id="inD-im-ith"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income Guide" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPI-yh-qqg">
+                    <rect key="frame" x="120" y="70" width="225" height="80"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income Guide is an app that helps calculate payroll" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDI-h4-RaA">
+                    <rect key="frame" x="30" y="170" width="315" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version number: V1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXI-ES-lmE">
+                    <rect key="frame" x="119" y="600" width="137" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="QXI-ES-lmE" secondAttribute="bottom" constant="50" id="6b0-yh-JlL"/>
+                <constraint firstItem="QXI-ES-lmE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KIc-RU-3OF"/>
+                <constraint firstItem="RaO-v8-aWo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="50" id="L3U-cE-cKT"/>
+                <constraint firstItem="XDI-h4-RaA" firstAttribute="top" secondItem="RaO-v8-aWo" secondAttribute="bottom" constant="20" id="Syr-e1-h4i"/>
+                <constraint firstItem="RaO-v8-aWo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="UHW-Hu-Kkf"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="XDI-h4-RaA" secondAttribute="trailing" constant="30" id="Vbw-J7-vfW"/>
+                <constraint firstItem="YPI-yh-qqg" firstAttribute="bottom" secondItem="RaO-v8-aWo" secondAttribute="bottom" id="nrW-0M-i7B"/>
+                <constraint firstItem="YPI-yh-qqg" firstAttribute="leading" secondItem="RaO-v8-aWo" secondAttribute="trailing" constant="10" id="pmZ-xP-zAy"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="YPI-yh-qqg" secondAttribute="trailing" constant="30" id="rQ2-1l-g8O"/>
+                <constraint firstItem="YPI-yh-qqg" firstAttribute="top" secondItem="RaO-v8-aWo" secondAttribute="top" id="rhr-uO-fje"/>
+                <constraint firstItem="XDI-h4-RaA" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="w7d-xd-LbI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo_icon" width="500" height="500"/>
+    </resources>
+</document>
